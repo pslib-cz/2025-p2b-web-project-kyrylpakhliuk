@@ -1,4 +1,4 @@
-Antic - web, zabývající se prodejem starožitností. Celý web tvoří 3 stránky. Na hlavní strance je veškerý sortiment (starý nábytek, sochy, koberce atd.),
+Antique - web, zabývající se prodejem starožitností. Celý web tvoří 3 stránky. Na hlavní strance je veškerý sortiment (starý nábytek, sochy, koberce atd.),
 na stránce "O nás" jsou informace o stránce a historii její vzniku a na stráce "Kontakt" se nachází kontaktní údaje.
 Cílem je vytvořit zajímavý design, který je inspirovaný již existujícími weby s podobnou tématikou.
  
