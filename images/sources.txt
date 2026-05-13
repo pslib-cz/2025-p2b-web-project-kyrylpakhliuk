@@ -1,0 +1,5 @@
+chair https://commons.wikimedia.org/wiki/File:Rocking_chair,_model_first_displayed_at_World_Exhibition,_London,_1851,_band-iron_with_wool_boucle_upholstery_-_Nordiska_museet_-_Stockholm,_Sweden_-_DSC09827.JPG
+chair2https://commons.wikimedia.org/wiki/File:Upholstered_Easy_Chair_from_Abraham_Lincoln%27s_Railroad_Car_-_DPLA_-_13919a71863a311ce6be2eb0a57fd856_(page_4).jpg
+table https://commons.wikimedia.org/wiki/File:Furniture_exhibited_in_the_museum.jpg
+
+painting https://commons.wikimedia.org/wiki/File:Dessert_no._3_LCCN2003663862.jpg
