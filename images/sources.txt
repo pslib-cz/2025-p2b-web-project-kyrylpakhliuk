@@ -11,10 +11,10 @@ carpet9 https://commons.wikimedia.org/wiki/File:%D9%85%D9%88%D8%B2%D9%87_%D9%81%
 carpet10 https://commons.wikimedia.org/wiki/File:Carpet_MET_wb-1971.263.2p.jpeg
 carpet11 https://commons.wikimedia.org/wiki/File:%22Bellini%22_carpet_MET_DT5444.jpg
 carpet12 https://commons.wikimedia.org/wiki/File:Carpet,_Iran,_Shirvan,_19th-20th_century,_Cleveland_Museum_of_Art_1961.390.jpg
-
-
 chair https://commons.wikimedia.org/wiki/File:Rocking_chair,_model_first_displayed_at_World_Exhibition,_London,_1851,_band-iron_with_wool_boucle_upholstery_-_Nordiska_museet_-_Stockholm,_Sweden_-_DSC09827.JPG
 chair2 https://commons.wikimedia.org/wiki/File:Upholstered_Easy_Chair_from_Abraham_Lincoln%27s_Railroad_Car_-_DPLA_-_13919a71863a311ce6be2eb0a57fd856_(page_4).jpg
+chair3 https://commons.wikimedia.org/wiki/File:Chair_MET_ADA4655.jpg
+chandelier https://commons.wikimedia.org/wiki/File:Chandelier_MET_189808.jpg
 clock https://commons.wikimedia.org/wiki/File:Tall_Clock_MET_ADA5714.jpg
 clock2 https://commons.wikimedia.org/wiki/File:Tall_Clock_MET_238717.jpg
 clock3 https://commons.wikimedia.org/wiki/File:Clock_MET_DP104657.jpg
@@ -31,12 +31,22 @@ clock13 https://commons.wikimedia.org/wiki/File:Longcase_clock_MET_13912.jpg
 clock14 https://commons.wikimedia.org/wiki/File:Longcase_clock_MET_3341.jpg
 clock15 https://commons.wikimedia.org/wiki/File:Musical_bracket_clock,_V%26A_London.jpg
 clock16 https://commons.wikimedia.org/wiki/File:Falize-Morrison_Carriage_clock.jpg
-
-
+cup https://commons.wikimedia.org/wiki/File:Cup_MET_DP241642.jpg
+cup2 https://commons.wikimedia.org/wiki/File:Beaker,_designer_Emmanuel_Jules_Joe-Descomps,_silversmith_JBF,_France,_Paris,_1903,_glass,_silver,_1998.307_-_Metropolitan_Museum_of_Art_-_New_York_City_-_DSC07537.jpg
 cupboard https://commons.wikimedia.org/wiki/File:Joined_cupboard,_attributed_to_Harvard_College_Joiners,_Cambridge,_Mass,_1670-1700,_red_oak,_white_pine,_sugar_maple_-_Concord_Museum_-_Concord,_MA_-_DSC05684.JPG
 cupboard2 https://commons.wikimedia.org/wiki/File:Schrank(1825).JPG
 earrings https://commons.wikimedia.org/wiki/File:Pair_of_earrings_MET_29565.jpg
-
+earrings2 https://commons.wikimedia.org/wiki/File:Pair_of_earrings_MET_223483.jpg
+earrings3 https://commons.wikimedia.org/wiki/File:Pair_of_earrings_(part_of_a_set)_MET_223461.jpg
+earrings4 https://commons.wikimedia.org/wiki/File:Earrings_(Italy),_ca._1850_(CH_18603505).jpg
+figurine https://commons.wikimedia.org/wiki/File:WINTER_LOVERS,_light.JPG
+figurine2 https://commons.wikimedia.org/wiki/File:Figurine_and_foliage,_glass_on_wooden_base_0221_-_DPLA_-_97668da84edbf7c325d648909cadd8b7.jpg
+lamp https://commons.wikimedia.org/wiki/File:Lamp_MET_176293.jpg
+lamp2 https://commons.wikimedia.org/wiki/File:Lamp_MET_180797.jpg
+lamp3 https://commons.wikimedia.org/wiki/File:Lamp_MET_136374.jpg
+necklace https://commons.wikimedia.org/wiki/File:Necklace_MET_sf08-202-27abs1b.jpg
+necklace2 https://commons.wikimedia.org/wiki/File:Dorothy_Benrimo,_%27Necklace,_1952%27_from_American_Metal_Work,_1976_p.4.png
+necklace3 https://commons.wikimedia.org/wiki/File:Necklace_MET_1986.331.3a_F.jpg
 painting https://commons.wikimedia.org/wiki/File:Dessert_no._3_LCCN2003663862.jpg
 painting2 https://commons.wikimedia.org/wiki/File:-Young_Man_Painting_Window_Frame-_MET_DP700328.jpg
 painting3 https://commons.wikimedia.org/wiki/File:19th-century_oval_portrait_miniature_of_woman_oil_painting_by_Valentine_Manchon_Duchesne_-_with_scale.jpg
@@ -47,9 +57,6 @@ ring2 https://commons.wikimedia.org/wiki/File:Ring_met_tafelgeslepen_robijn,_BK-
 ring3 https://commons.wikimedia.org/wiki/File:Ring_met_een_gekroond_hart,_BK-16589.jpg
 ring4 https://commons.wikimedia.org/wiki/File:Memento_Mori-ring,_BK-2017-14.jpg
 ring5 https://commons.wikimedia.org/wiki/File:Ring_met_tafelgeslepen_diamant,_BK-17183.jpg
-
-
-
 sofa https://commons.wikimedia.org/wiki/File:Sofa_MET_ADA3269.jpg
 spoon https://commons.wikimedia.org/wiki/File:Spoon_with_a_Panther_MET_sf17-192-254s1.jpg
 table https://commons.wikimedia.org/wiki/File:Furniture_exhibited_in_the_museum.jpg
@@ -64,4 +71,3 @@ watch5 https://commons.wikimedia.org/wiki/File:Watch_MET_DP-12739-123.jpg
 watch6 https://commons.wikimedia.org/wiki/File:Remontoir_horloge_met_cilindergang_in_de_vorm_van_een_insect,_objectnr_KA_3624.jpg
 watch7 https://commons.wikimedia.org/wiki/File:Watch_MET_DP-12603-063.jpg
 watch8 https://commons.wikimedia.org/wiki/File:Clock_watch_MET_DP351934.jpg
-
