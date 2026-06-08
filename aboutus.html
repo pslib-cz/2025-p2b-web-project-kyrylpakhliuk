@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Kapakana:wght@300..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css">
+    <title>O nás</title>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="logo">Antique</div>
+
+        <nav>
+            <a href="./index.html">Nabídka</a>
+            <a href="./contacts.html">Kontakt</a>
+            <a href="#" class="active">O nás</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search">
+                <div class="icon-no-bg">
+                    <img src="icons/search.png" alt="">
+                </div>
+                <input type="text" id="search-desktop" placeholder="Hledat">
+                <button class="search-clear" id="clear-desktop" aria-label="Vymazat hledání">&#x2715;</button>
+            </div>
+            <div class="icon-bg">
+                <img src="icons/user.png" alt="">
+            </div>
+            <div class="icon-bg">
+                <img src="icons/shopping_cart.png" alt="">
+            </div>
+        </div>
+
+        <div class="search search-mobile">
+            <div class="icon-no-bg">
+                <img src="icons/search.png" alt="">
+            </div>
+            <input type="text" id="search-mobile" placeholder="Hledat">
+            <button class="search-clear" id="clear-mobile" aria-label="Vymazat hledání">&#x2715;</button>
+        </div>
+    </header>
+
+    <div class="main" style="display:block;">
+        <div class="about-main">
+
+            <div class="about-sections">
+            <div class="about-section">
+                <h2 class="section-title">Náš příběh</h2>
+                <p>Antique je obchod zaměřený na starožitný a vintage nábytek, dekorace a interiérové doplňky s charakterem a historií. Specializujeme se především na pečlivě vybrané kusy nábytku z různých období 20. století, které renovujeme a připravujeme pro další používání.</p>
+                <p>Každý kus v naší nabídce je originál. Zaměřujeme se na nábytek, který má vlastní styl, kvalitní řemeslné zpracování a vydrží další desítky let. Věříme, že starší nábytek má větší hodnotu než masově vyráběné produkty bez identity.</p>
+            </div>
+
+            <div class="about-section">
+                <h2 class="section-title">Co nabízíme</h2>
+                <p>Součástí naší práce je také čištění, oprava a částečná renovace vybraných kusů tak, aby si zachovaly svůj původní vzhled a charakter. Do nabídky vybíráme především nábytek a doplňky, které se hodí jak do klasických interiérů, tak do moderních prostor kombinujících staré a nové prvky.</p>
+                <p>V našem sortimentu najdete například:</p>
+                <ul>
+                    <li><a href="./index.html?category=ostatni">obrazy</a></li>
+                    <li><a href="./index.html?category=nabytek">vintage nábytek</a></li>
+                    <li><a href="./index.html?category=hodiny">hodiny a hodinky</a></li>
+                    <li><a href="./index.html?category=koberce">vázané koberce</a></li>
+                    <li><a href="./index.html?category=sperky">šperky</a></li>
+                </ul>
+                <p>Kromě online nabídky provozujeme také kamennou prodejnu v Liberci, kde si můžete jednotlivé kusy prohlédnout osobně.</p>
+                <p>Naším cílem není prodávat velké množství zboží, ale nabízet zajímavé a zachovalé kusy nábytku, které mají vlastní příběh a mohou být součástí interiéru ještě mnoho dalších let.</p>
+            </div>
+
+            </div>
+
+            <div id="about-gallery" class="about-gallery">
+
+                <a class="gallery-item-main"
+                   href="images/about/shop-front.jpg">
+                    <img src="images/shop/storefront.jpg" alt="Výloha obchodu Antique">
+                </a>
+
+                <div class="gallery-grid-right">
+                    <a class="gallery-item"
+                       href="images/about/interior-1.jpg">
+                        <img src="images/shop/storefront2.jpg" alt="Interiér 1">
+                    </a>
+                    <a class="gallery-item"
+                       href="images/about/interior-2.jpg">
+                        <img src="images/shop/store.jpg" alt="Interiér 2">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div>2026 © Antique</div>
+        <div class="footer-links">
+            <a href="#">Ochrana osobních údajů</a>
+            <a href="#">Obchodní podmínky</a>
+            <a href="#">Kontakt</a>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lg-zoom/1.2.0/lg-zoom.min.js"></script>
+
+<script>
+function goSearch(query) {
+    const q = query.trim();
+    if (q) window.location.href = "./index.html?q=" + encodeURIComponent(q);
+}
+
+[["clear-desktop", "search-desktop"], ["clear-mobile", "search-mobile"]].forEach(([btnId, inputId]) => {
+    const btn = document.getElementById(btnId);
+    const input = document.getElementById(inputId);
+    if (!btn || !input) return;
+    const syncBtn = () => { btn.style.display = input.value ? "flex" : "none"; };
+    input.addEventListener("input", syncBtn);
+    syncBtn();
+    btn.addEventListener("click", () => {
+        input.value = "";
+        btn.style.display = "none";
+        input.focus();
+    });
+    input.addEventListener("keydown", e => {
+        if (e.key === "Enter") goSearch(input.value);
+    });
+});
+
+(function() {
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+        if (window.innerWidth > 900) return;
+        header.classList.toggle("header-scrolled", window.scrollY > 10);
+    }, { passive: true });
+})();
+
+
+$(function () {
+    const $items = $("#about-gallery").find("a.gallery-item-main, a.gallery-item");
+
+    const $lg = $("<div id='lg-wrapper' style='display:none'></div>").appendTo("body");
+    $items.each(function () { $lg.append($(this).clone(true)); });
+
+    $("#lg-wrapper").lightGallery({
+        selector: "a",
+        zoom: true,
+        download: false,
+    });
+
+    $items.each(function (i) {
+        $(this).on("click", function (e) {
+            e.preventDefault();
+            $("#lg-wrapper").data("lightGallery").slide(i);
+            $("#lg-wrapper").data("lightGallery").openGallery(i);
+        });
+    });
+});
+</script>
+
+</body>
+</html>

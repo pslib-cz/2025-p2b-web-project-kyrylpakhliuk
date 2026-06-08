@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Kapakana:wght@300..400&display=swap" rel="stylesheet">
+    <title>Kontakt</title>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="logo">Antique</div>
+
+        <nav>
+            <a href="./index.html">Nabídka</a>
+            <a href="#" class="active">Kontakt</a>
+            <a href="./aboutus.html">O nás</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search">
+                <div class="icon-no-bg">
+                    <img src="icons/search.png" alt="">
+                </div>
+                <input type="text" id="search-desktop" placeholder="Hledat">
+                <button class="search-clear" id="clear-desktop" aria-label="Vymazat hledání">&#x2715;</button>
+            </div>
+            <div class="icon-bg">
+                <img src="icons/user.png" alt="">
+            </div>
+            <div class="icon-bg">
+                <img src="icons/shopping_cart.png" alt="">
+            </div>
+        </div>
+
+        <div class="search search-mobile">
+            <div class="icon-no-bg">
+                <img src="icons/search.png" alt="">
+            </div>
+            <input type="text" id="search-mobile" placeholder="Hledat">
+            <button class="search-clear" id="clear-mobile" aria-label="Vymazat hledání">&#x2715;</button>
+        </div>
+    </header>
+
+    <div class="main" style="display:block;">
+        <div class="contacts-main">
+
+            <div class="contacts-left">
+                <div class="contact-info">
+                    <div class="contact-info-row">
+                        <div class="icon-bg"><img src="./icons/email.png" alt=""></div>
+                        <a href="mailto:abcde@antique.cz">abcde@antique.cz</a>
+                    </div>
+                    <div class="contact-info-row">
+                        <div class="icon-bg"><img src="./icons/phone.png" alt=""></div>
+                        <a href="tel:+420721571281">+420 721 571 281</a>
+                    </div>
+                    <div class="contact-info-row">
+                        <div class="icon-bg"><img src="./icons/address.png" alt=""></div>
+                        <span>Pražská 11/13, 460 07 Liberec</span>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h2 class="section-title">Kontakt</h2>
+                    <div class="form-row form-row-name">
+                        <label for="name">Jméno<span class="req">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row form-row-email">
+                        <label for="email">E-mail<span class="req">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Předmět</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-row form-row-top">
+                        <label for="message">Text zprávy<span class="req">*</span></label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button class="btn-submit" type="submit">Odeslat</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts-right">
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.7!2d15.0543!3d50.7663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936b4d4b4b4b5%3A0x0!2sPra%C5%BEsk%C3%A1+10%2F11%2C+460+07+Liberec!5e0!3m2!1scs!2scz!4v1700000000000"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa – Antique Liberec">
+                    </iframe>
+                </div>
+
+                <div class="hours-section">
+                    <h2 class="section-title">Provozní doba</h2>
+                    <div class="hours-grid">
+                        <span class="hours-day">Po - Čt</span>
+                        <span class="hours-time">8:00 - 19:00</span>
+                        <span class="hours-day">Pátek</span>
+                        <span class="hours-time">8:00 - 16:00</span>
+                        <span class="hours-day">So - Ne</span>
+                        <span class="hours-time">10:00 - 16:00</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div>2026 © Antique</div>
+        <div class="footer-links">
+            <a href="#">Ochrana osobních údajů</a>
+            <a href="#">Obchodní podmínky</a>
+            <a href="#">Kontakt</a>
+        </div>
+    </footer>
+</div>
+
+<script>
+function goSearch(query) {
+    const q = query.trim();
+    if (q) window.location.href = "./index.html?q=" + encodeURIComponent(q);
+}
+
+[["clear-desktop", "search-desktop"], ["clear-mobile", "search-mobile"]].forEach(([btnId, inputId]) => {
+    const btn = document.getElementById(btnId);
+    const input = document.getElementById(inputId);
+    if (!btn || !input) return;
+    const syncBtn = () => { btn.style.display = input.value ? "flex" : "none"; };
+    input.addEventListener("input", syncBtn);
+    syncBtn();
+    btn.addEventListener("click", () => {
+        input.value = "";
+        btn.style.display = "none";
+        input.focus();
+    });
+    input.addEventListener("keydown", e => {
+        if (e.key === "Enter") goSearch(input.value);
+    });
+});
+
+(function() {
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+        if (window.innerWidth > 900) return;
+        header.classList.toggle("header-scrolled", window.scrollY > 10);
+    }, { passive: true });
+})();
+</script>
+
+</body>
+</html>

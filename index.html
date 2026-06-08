@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,132 +14,449 @@
     <title>Projekt</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-        
-            <div class="logo">Antique</div>
-        
-            <nav>
-                <a href="#" class="active">Nabídka</a>
-                <a href="#">Kontakt</a>
-                <a href="#">O nás</a>
-            </nav>
-        
-            <div class="header-right">
-                <div class="search">🔎 Hledat</div>
-                <div class="icon">👤</div>
-                <div class="icon">🧺</div>
-            </div>
-        
-        </header>
-    
-        <div class="main">
-    
-            <aside class="sidebar">
-        
-                <h2>Kategorie</h2>
-        
-                <ul>
-                    <li><a class="selected" href="#">Nábytek</a></li>
-                    <li><a href="#">Hodiny a hodinky</a></li>
-                    <li><a href="#">Šperky</a></li>
-                    <li><a href="#">Koberce</a></li>
-                    <li><a href="#">Ostatní</a></li>
-                </ul>
-        
-            </aside>
-        
-            <section class="content">
-        
-                <div class="products">
-        
-                    <div class="product-card">
-                        <img src="./images/chair.jpg">
-                        <div class="product-name">Houpací křeslo</div>
-                        <div class="price">🧺 3400 Kč</div>
-                    </div>
-        
-                    <div class="product-card">
-                        <img src="./images/table2.jpg">
-                        <div class="product-name">Šicí stolek</div>
-                        <div class="price">🧺 4600 Kč</div>
-                    </div>
-        
-                    <div class="product-card">
-                        <img src="./images/chair2.jpg">
-                        <div class="product-name">Salónní křeslo</div>
-                        <div class="price">🧺 4000 Kč</div>
-                    </div>
-        
-                    <div class="product-card active">
-                        <img src="./images/chandelier.jpg">
-                        <div class="product-name">Křišťálový lustr</div>
-                        <div class="price">🧺 45000 Kč</div>
-                    </div>
-        
-                    <div class="product-card">
-                        <img src="./images/sofa.jpg">
-                        <div class="product-name">Secesní pohovka</div>
-                        <div class="price">🧺 14000 Kč</div>
-                    </div>
-        
-                    <div class="product-card">
-                        <img src="./images/table.jpg">
-                        <div class="product-name">Gramofonový stolek</div>
-                        <div class="price">🧺 5200 Kč</div>
-                    </div>
-        
-                </div>
-        
-                <h2 class="section-title">Doporučujeme</h2>
-        
-                <div class="recommended">
-        
-                    <div class="product-card">
-                        <img src="./images/cupboard.jpg">
-                        <div class="product-name">Rustikální komoda</div>
-                        <div class="price">🧺 7100 Kč</div>
-                    </div>
-        
-                    <div class="product-card">
-                        <img src="./images/necklace.jpg">
-                        <div class="product-name">Náhrdelník</div>
-                        <div class="price">🧺 1500 Kč</div>
-                    </div>
-        
-                    <div class="product-card">
-                        <img src="./images/watch6.jpg">
-                        <div class="product-name">Hodinky</div>
-                        <div class="price">🧺 83000 Kč</div>
-                    </div>
-        
-                    <div class="product-card">
-                        <img src="./images/painting5.jpg">
-                        <div class="product-name">Viktoriánský obraz</div>
-                        <div class="price">🧺 5500 Kč</div>
-                    </div>
-        
-                </div>
-        
-            </section>
-        
-        </div>
-    </div>
-    
-    
-    <footer>
+<div class="container">
 
-        <div>2026 © Antique</div>
-    
-        <div class="footer-links">
-            <a href="#">Ochrana osobních údajů</a>
-            <a href="#">Obchodní podmínky</a>
-            <a href="#">Kontakt</a>
+    <header>
+        <div class="logo">Antique</div>
+
+        <nav>
+            <a href="#" class="active">Nabídka</a>
+            <a href="./contacts.html">Kontakt</a>
+            <a href="./aboutus.html">O nás</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search">
+                <div class="icon-no-bg">
+                    <img src="icons/search.png" alt="">
+                </div>
+                <input type="text" id="search-desktop" placeholder="Hledat">
+                <button class="search-clear" id="clear-desktop" aria-label="Vymazat hledání">&#x2715;</button>
+            </div>
+            <div class="icon-bg">
+                <img src="icons/user.png" alt="">
+            </div>
+            <div class="icon-bg">
+                <img src="icons/shopping_cart.png" alt="">
+            </div>
         </div>
-    
-    </footer>
-    
+
+        <div class="search search-mobile">
+            <div class="icon-no-bg">
+                <img src="icons/search.png" alt="">
+            </div>
+            <input type="text" id="search-mobile" placeholder="Hledat">
+            <button class="search-clear" id="clear-mobile" aria-label="Vymazat hledání">&#x2715;</button>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <aside class="sidebar">
+            <h2 class="section-title">Kategorie</h2>
+            <ul id="category-list" class="category-list">
+                <li><a class="selected" href="#" data-category="nabytek">Nábytek</a></li>
+                <li><a href="#" data-category="hodiny">Hodiny a hodinky</a></li>
+                <li><a href="#" data-category="sperky">Šperky</a></li>
+                <li><a href="#" data-category="koberce">Koberce</a></li>
+                <li><a href="#" data-category="ostatni">Ostatní</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <div class="gallery-wrapper">
+                <button class="arrow-btn" id="arrow-prev" aria-label="Předchozí stránka">&#8592;</button>
+                <div class="products" id="product-grid"></div>
+                <button class="arrow-btn" id="arrow-next" aria-label="Další stránka">&#8594;</button>
+            </div>
+            <div class="dot-indicator" id="dot-indicator"></div>
+
+            <h2 class="section-title section-title--recommended">Doporučujeme</h2>
+
+            <div class="recommended-clip">
+                <div class="recommended" id="recommended">
+                    <div class="product-card">
+                        <div class="product-card-image"><img src="./images/furniture/cupboard.jpg" alt=""></div>
+                        <div class="product-name">Rustikální komoda</div>
+                        <div class="price">7100 Kč</div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-image"><img src="./images/jewelry/necklace.jpg" alt=""></div>
+                        <div class="product-name">Stříbrný náhrdelník</div>
+                        <div class="price">1500 Kč</div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-image"><img src="./images/clocks/watch6.jpg" alt=""></div>
+                        <div class="product-name">Švýcarské zdobené hodinky</div>
+                        <div class="price">46500 Kč</div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card-image"><img src="./images/misc/painting5.jpg" alt=""></div>
+                        <div class="product-name">Viktoriánský obraz</div>
+                        <div class="price">8350 Kč</div>
+                    </div>
+                </div>
+            </div>
+            <div class="rec-dot-indicator" id="rec-dot-indicator"></div>
+        </section>
+
     </div>
-    
-    </body>
-    </html>
+
+    <footer>
+    <div>2026 © Antique</div>
+    <div class="footer-links">
+        <a href="#">Ochrana osobních údajů</a>
+        <a href="#">Obchodní podmínky</a>
+        <a href="#">Kontakt</a>
+    </div>
+    </footer>
+</div>
+
+<script>
+const PRODUCTS = {
+    nabytek: [
+        { name: "Houpací křeslo", price: "3 400 Kč",  img: "./images/furniture/chair.jpg" },
+        { name: "Šicí stolek", price: "4 650 Kč",  img: "./images/furniture/table2.jpg" },
+        { name: "Salónní křeslo", price: "4 000 Kč",  img: "./images/furniture/chair2.jpg" },
+        { name: "Křišťálový lustr", price: "45 000 Kč", img: "./images/furniture/chandelier.jpg" },
+        { name: "Secesní pohovka", price: "14 150 Kč", img: "./images/furniture/sofa.jpg" },
+        { name: "Gramofonový stolek", price: "5 200 Kč",  img: "./images/furniture/table.jpg" },
+        { name: "Rustikální komoda", price: "7 150 Kč",  img: "./images/furniture/cupboard.jpg" },
+        { name: "Kovová lampa", price: "4 800 Kč", img: "./images/furniture/lamp.jpg" },
+        { name: "Čalouněná židle", price: "3 200 Kč",  img: "./images/furniture/chair3.jpg" },
+        { name: "Černá skleněná lampa", price: "2 100 Kč", img: "./images/furniture/lamp2.jpg" },
+        { name: "Bílá skleněná lampa", price: "2 050 Kč", img: "./images/furniture/lamp3.jpg" },
+        { name: "Selská skříň", price: "16 000 Kč", img: "./images/furniture/cupboard2.jfif" },
+    ],
+    hodiny: [
+        { name: "Hodinky se zdobením", price: "7 700 Kč", img: "./images/clocks/watch.jpg" },
+        { name: "Stojací hodiny", price: "18 400 Kč", img: "./images/clocks/clock2.jpg" },
+        { name: "Náramkové hodinky", price: "10 500 Kč", img: "./images/clocks/watch2.jpg" },
+        { name: "Klasické hodinky", price: "8 100 Kč", img: "./images/clocks/watch3.jpg" },
+        { name: "Stolní dřevěné hodiny", price: "5 300 Kč", img: "./images/clocks/clock3.jpg" },
+        { name: "Modré nástěnné hodiny", price: "3 750 Kč", img: "./images/clocks/clock4.jpg" },
+        { name: "Zdobené porcelánové hodiny", price: "12 000 Kč", img: "./images/clocks/clock5.jpg" },
+        { name: "Krbové hodiny", price: "9 500 Kč", img: "./images/clocks/clock6.jpg" },
+        { name: "Kapesní hodinky", price: "8 350 Kč", img: "./images/clocks/watch4.jpg" },
+        { name: "Černé nástěnné hodiny", price: "3 050 Kč", img: "./images/clocks/clock7.jpg" },
+        { name: "Dřevěné nástěnné hodiny", price: "3 450 Kč", img: "./images/clocks/clock8.jpg" },
+        { name: "Rustikální dřevěné hodiny", price: "5 650 Kč", img: "./images/clocks/clock9.jpg" },
+        { name: "Starožitné hodinky", price: "5 300 Kč", img: "./images/clocks/watch5.jpg" },
+        { name: "Sloupkové hodiny", price: "7 350 Kč", img: "./images/clocks/clock10.jpg" },
+        { name: "Dubové hodiny", price: "18 350 Kč", img: "./images/clocks/clock11.jpg" },
+        { name: "Seiko stolní budík", price: "2 200 Kč", img: "./images/clocks/clock12.jpg" },
+        { name: "Švýcarské zdobené hodinky", price: "46 500 Kč", img: "./images/clocks/watch6.jpg" },
+        { name: "Věžní hodiny", price: "11 950 Kč", img: "./images/clocks/clock13.jpg" },
+        { name: "Černé hodiny", price: "11 500 Kč", img: "./images/clocks/clock14.jpg" },
+        { name: "Švýcarské hodinky", price: "13 550 Kč", img: "./images/clocks/watch7.jpg" },
+        { name: "Empírové hodiny", price: "11 050 Kč", img: "./images/clocks/clock.jpg" },
+        { name: "Zlaté hodinky", price: "41 550 Kč", img: "./images/clocks/watch8.jpg" },
+        { name: "Turecké hodiny", price: "21 700 Kč", img: "./images/clocks/clock15.jpg" },
+        { name: "Hodiny s kalendářem", price: "36 200 Kč", img: "./images/clocks/clock16.jpg" },
+    ],
+    sperky: [
+        { name: "Filigránové náušnice", price: "3 150 Kč", img: "./images/jewelry/earrings.jpg" },
+        { name: "Prsten s diamantem", price: "30 000 Kč", img: "./images/jewelry/ring.jpg" },
+        { name: "Stříbrný náhrdelník", price: "1 500 Kč", img: "./images/jewelry/necklace.jpg" },
+        { name: "Visací stříbrné náušnice", price: "4 000 Kč", img: "./images/jewelry/earrings2.jpg" },
+        { name: "Prsten s barevným kamenem", price: "20 000 Kč", img: "./images/jewelry/ring2.jpg" },
+        { name: "Náušnice s ornamenty", price: "7 350 Kč", img: "./images/jewelry/earrings3.jpg" },
+        { name: "Prsten zdobený diamanty", price: "52 350 Kč", img: "./images/jewelry/ring3.jpg" },
+        { name: "Kovový náhrdelník", price: "4 350 Kč", img: "./images/jewelry/necklace2.png" },
+        { name: "Rytý prsten", price: "12 300 Kč", img: "./images/jewelry/ring4.jpg" },
+        { name: "Zlatý prsten", price: "31 200 Kč", img: "./images/jewelry/ring5.jpg" },
+        { name: "Korálové náušnice", price: "7 750 Kč", img: "./images/jewelry/earrings4.jpg" },
+        { name: "Smaragdový náhrdelník", price: "11 850 Kč", img: "./images/jewelry/necklace3.jpg" },
+    ],
+    koberce: [
+        { name: "Tkaný koberec", price: "8 900 Kč", img: "./images/carpets/carpet.jpg" },
+        { name: "Perský koberec", price: "13 500 Kč", img: "./images/carpets/carpet2.jpg" },
+        { name: "Ornamentální koberec", price: "11 650 Kč", img: "./images/carpets/carpet3.jpg" },
+        { name: "Červený koberec", price: "7 650 Kč", img: "./images/carpets/carpet4.jpg" },
+        { name: "Orientální běhoun", price: "8 100 Kč", img: "./images/carpets/carpet5.jpg" },
+        { name: "Geometrický koberec", price: "12 000 Kč", img: "./images/carpets/carpet6.jpg" },
+        { name: "Hedvábný běhoun", price: "9 300 Kč", img: "./images/carpets/carpet7.jpg" },
+        { name: "Modrý koberec", price: "8 300 Kč", img: "./images/carpets/carpet8.jpg" },
+        { name: "Vintage tapisérie", price: "11 400 Kč", img: "./images/carpets/carpet9.jpg" },
+        { name: "Turecký koberec", price: "12 350 Kč", img: "./images/carpets/carpet10.jpeg" },
+        { name: "Kavkazský koberec", price: "10 100 Kč", img: "./images/carpets/carpet11.jpg" },
+        { name: "Ručně tkaný koberec", price: "13 700 Kč", img: "./images/carpets/carpet12.jpg" },
+    ],
+    ostatni: [
+        { name: "Zátiší s ovocem", price: "6 300 Kč", img: "./images/misc/painting.jpg" },
+        { name: "Skleněný hrnek", price: "1 300 Kč", img: "./images/misc/cup.jpg" },
+        { name: "Mramorová socha", price: "26 000 Kč", img: "./images/misc/bust.jpg" },
+        { name: "Portrétní fotografie", price: "5 600 Kč", img: "./images/misc/painting2.jpg" },
+        { name: "Skleněné sousoší", price: "8 150 Kč", img: "./images/misc/figurine.jpg" },
+        { name: "Keramická nádoba", price: "3 250 Kč", img: "./images/misc/vase.jpg" },
+        { name: "Portrétní miniatura", price: "6 300 Kč", img: "./images/misc/painting3.jpg" },
+        { name: "Zdobená číše", price: "3 400 Kč", img: "./images/misc/cup2.jpg" },
+        { name: "Stříbrná lžíce", price: "900 Kč", img: "./images/misc/spoon.jpg" },
+        { name: "Krajinomalba", price: "13 050 Kč", img: "./images/misc/painting4.jpg" },
+        { name: "Květinová soška", price: "4 600 Kč", img: "./images/misc/figurine2.jpg" },
+        { name: "Viktoriánský obraz", price: "8 350 Kč", img: "./images/misc/painting5.jpg" },
+    ],
+};
+
+const PER_PAGE = 6;
+let currentCategory = "nabytek";
+let currentPage = 1;
+let searchResults = null;
+
+const grid = document.getElementById("product-grid");
+const prevBtn = document.getElementById("arrow-prev");
+const nextBtn = document.getElementById("arrow-next");
+const dotIndicator = document.getElementById("dot-indicator");
+
+function isMobile() { return window.innerWidth <= 500; }
+function isDesktop() { return window.innerWidth > 900; }
+
+function allProducts() {
+    return Object.values(PRODUCTS).flat();
+}
+
+function activeItems() {
+    return searchResults !== null ? searchResults : PRODUCTS[currentCategory];
+}
+
+function totalPages() {
+    if (isMobile()) return 1;
+    return Math.ceil(activeItems().length / PER_PAGE);
+}
+
+function renderDots(total) {
+    if (isMobile() || total <= 1) { dotIndicator.innerHTML = ""; return; }
+    dotIndicator.innerHTML = Array.from({length: total}, (_, i) =>
+        `<span class="dot${i + 1 === currentPage ? " active" : ""}" data-page="${i + 1}"></span>`
+    ).join("");
+}
+
+function renderGrid() {
+    const items = activeItems();
+    const total = totalPages();
+    const slice = isMobile() ? items : items.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE);
+
+    const showArrows = isDesktop() && total > 1;
+    prevBtn.style.display = showArrows ? "flex" : "none";
+    nextBtn.style.display = showArrows ? "flex" : "none";
+
+    renderDots(total);
+
+    grid.classList.add("fade-out");
+    setTimeout(() => {
+        if (items.length === 0) {
+            grid.innerHTML = `<div class="search-no-results">Žádné produkty nenalezeny.</div>`;
+        } else {
+            grid.innerHTML = slice.map(p => `
+                <div class="product-card">
+                    <div class="product-card-image"><img src="${p.img}" alt="${p.name}"></div>
+                    <div class="product-name">${p.name}</div>
+                    <div class="price">${p.price}</div>
+                </div>
+            `).join("");
+        }
+        grid.classList.remove("fade-out");
+        grid.classList.add("fade-in");
+        setTimeout(() => grid.classList.remove("fade-in"), 300);
+    }, 180);
+}
+
+function doSearch(query) {
+    const q = query.trim().toLowerCase();
+    if (q === "") {
+        clearSearch();
+        return;
+    }
+    searchResults = allProducts().filter(p => p.name.toLowerCase().includes(q));
+    document.querySelectorAll("#category-list a").forEach(a => a.classList.remove("selected"));
+    currentPage = 1;
+    renderGrid();
+}
+
+function clearSearch() {
+    searchResults = null;
+    document.querySelectorAll("#category-list a").forEach(a => {
+        a.classList.toggle("selected", a.dataset.category === currentCategory);
+    });
+    currentPage = 1;
+    renderGrid();
+}
+
+[["clear-desktop", "search-desktop"], ["clear-mobile", "search-mobile"]].forEach(([btnId, inputId]) => {
+    const btn = document.getElementById(btnId);
+    const input = document.getElementById(inputId);
+    if (!btn || !input) return;
+    const syncBtn = () => { btn.style.display = input.value ? "flex" : "none"; };
+    input.addEventListener("input", syncBtn);
+    syncBtn();
+    btn.addEventListener("click", () => {
+        ["search-desktop", "search-mobile"].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.value = "";
+        });
+        [document.getElementById("clear-desktop"), document.getElementById("clear-mobile")].forEach(b => { if (b) b.style.display = "none"; });
+        clearSearch();
+        input.focus();
+    });
+});
+
+
+["search-desktop", "search-mobile"].forEach(id => {
+    const input = document.getElementById(id);
+    if (!input) return;
+    input.addEventListener("keydown", e => {
+        if (e.key === "Enter") {
+            ["search-desktop", "search-mobile"].forEach(otherId => {
+                const other = document.getElementById(otherId);
+                if (other) other.value = input.value;
+            });
+            ["clear-desktop", "clear-mobile"].forEach(btnId => {
+                const btn = document.getElementById(btnId);
+                if (btn) btn.style.display = input.value ? "flex" : "none";
+            });
+            doSearch(input.value);
+        }
+    });
+    input.addEventListener("input", () => {
+        const clearBtn = document.getElementById(id === "search-desktop" ? "clear-desktop" : "clear-mobile");
+        if (clearBtn) clearBtn.style.display = input.value ? "flex" : "none";
+        const otherClearBtn = document.getElementById(id === "search-desktop" ? "clear-mobile" : "clear-desktop");
+        if (input.value === "") {
+            ["search-desktop", "search-mobile"].forEach(otherId => {
+                const other = document.getElementById(otherId);
+                if (other) other.value = "";
+            });
+            if (otherClearBtn) otherClearBtn.style.display = "none";
+            clearSearch();
+        }
+    });
+});
+
+prevBtn.addEventListener("click", () => {
+    currentPage = currentPage <= 1 ? totalPages() : currentPage - 1;
+    renderGrid();
+});
+
+nextBtn.addEventListener("click", () => {
+    currentPage = currentPage >= totalPages() ? 1 : currentPage + 1;
+    renderGrid();
+});
+
+dotIndicator.addEventListener("click", e => {
+    const dot = e.target.closest(".dot");
+    if (!dot) return;
+    currentPage = +dot.dataset.page;
+    renderGrid();
+});
+
+document.getElementById("category-list").addEventListener("click", e => {
+    const link = e.target.closest("a[data-category]");
+    if (!link) return;
+    e.preventDefault();
+    ["search-desktop", "search-mobile"].forEach(id => {
+        const input = document.getElementById(id);
+        if (input) input.value = "";
+    });
+    searchResults = null;
+    document.querySelectorAll("#category-list a").forEach(a => a.classList.remove("selected"));
+    link.classList.add("selected");
+    currentCategory = link.dataset.category;
+    currentPage = 1;
+    renderGrid();
+});
+
+window.addEventListener("resize", () => {
+    currentPage = 1;
+    renderGrid();
+    recInit();
+});
+
+(function() {
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+        if (window.innerWidth > 900) return;
+        if (window.scrollY > 10) {
+            header.classList.add("header-scrolled");
+        } else {
+            header.classList.remove("header-scrolled");
+        }
+    }, { passive: true });
+})();
+
+(function() {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+    const cat = params.get("category");
+    if (q && q.trim()) {
+        ["search-desktop", "search-mobile"].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.value = q;
+        });
+        ["clear-desktop", "clear-mobile"].forEach(id => {
+            const btn = document.getElementById(id);
+            if (btn) btn.style.display = "flex";
+        });
+        doSearch(q);
+    } else if (cat && PRODUCTS[cat]) {
+        currentCategory = cat;
+        document.querySelectorAll("#category-list a").forEach(a => {
+            a.classList.toggle("selected", a.dataset.category === cat);
+        });
+        renderGrid();
+    } else {
+        renderGrid();
+    }
+})();
+
+const recStrip = document.getElementById("recommended");
+const recDotEl = document.getElementById("rec-dot-indicator");
+let recOffset = 0;
+
+function isTablet() { return window.innerWidth <= 900 && window.innerWidth > 500; }
+
+function recCardWidth() {
+    const clip = document.querySelector(".recommended-clip");
+    const strip = recStrip;
+    if (!clip) return 0;
+    const gap = parseFloat(getComputedStyle(strip).gap) || 16;
+    const cardW = (clip.offsetWidth - 2 * gap) / 3;
+    return cardW + gap;
+}
+
+function recMaxOffset() {
+    const cards = recStrip.querySelectorAll(".product-card").length;
+    return Math.max(0, cards - 3);
+}
+
+function recRender() {
+    if (!isTablet()) {
+        recStrip.style.transform = "";
+        recDotEl.innerHTML = "";
+        return;
+    }
+    const max = recMaxOffset();
+    recOffset = Math.max(0, Math.min(recOffset, max));
+    recStrip.style.transform = `translateX(-${recOffset * recCardWidth()}px)`;
+
+    recDotEl.innerHTML = Array.from({length: max + 1}, (_, i) =>
+        `<span class="rec-dot${i === recOffset ? " active" : ""}" data-i="${i}"></span>`
+    ).join("");
+}
+
+recDotEl.addEventListener("click", e => {
+    const dot = e.target.closest(".rec-dot");
+    if (!dot) return;
+    recOffset = +dot.dataset.i;
+    recRender();
+});
+
+function recInit() {
+    recOffset = 0;
+    recRender();
+}
+
+recInit();
+</script>
+
+</body>
+</html>
